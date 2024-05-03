@@ -26,7 +26,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-blue-950">
+    <header className="bg-blue-950 border-b border-blue-400/30">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8"
         aria-label="Global"
@@ -63,7 +63,10 @@ export default function Navbar() {
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-50 bg-blue-500 px-6 py-3 rounded-md">
+          <a
+            href="#"
+            className="text-sm font-semibold leading-6 text-gray-50 bg-blue-500 px-6 py-3 rounded-md"
+          >
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
