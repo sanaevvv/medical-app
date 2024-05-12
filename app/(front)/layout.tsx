@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Frontend/Footer";
 import { MegaMenu } from "@/components/Frontend/MegaMenu";
 import Navbar from "@/components/Frontend/Navbar";
 
@@ -10,6 +11,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       </div> */}
       {/* <div className="mt-[9.6rem]">{children}</div> */}
       <div className="mt-[60px]">{children}</div>
+      <Footer />
     </div>
   );
 };
