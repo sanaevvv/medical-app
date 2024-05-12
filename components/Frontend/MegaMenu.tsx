@@ -13,6 +13,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
+import { usePathname } from 'next/navigation';
 
 const megaMenu = [
   {
@@ -118,8 +119,10 @@ const megaMenu = [
 ];
 
 export function MegaMenu() {
+  // const pathname = usePathname()
+  // if (pathname === "login") return;
   return (
-    <NavigationMenu>
+    <NavigationMenu className="max-w-7xl px-4 mx-auto justify-start">
       <NavigationMenuList className="space-x-4">
         {megaMenu.map((menu, i) => (
           <NavigationMenuItem key={i}>

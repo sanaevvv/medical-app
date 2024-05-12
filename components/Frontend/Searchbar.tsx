@@ -6,8 +6,7 @@ import React from 'react';
 
 export const SearchBar = () => {
   return (
-    <div>
-      <form className="max-w-md mx-auto">
+      <form className="mx-auto">
         <label
           htmlFor="default-search"
           className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
@@ -33,6 +32,5 @@ export const SearchBar = () => {
           </button>
         </div>
       </form>
-    </div>
   );
 };
