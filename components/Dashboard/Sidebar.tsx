@@ -2,6 +2,7 @@
 
 import {
   Bell,
+  Globe,
   Home,
   LineChart,
   Package,
@@ -50,21 +51,31 @@ const sidebarLabels = [
     name: 'Settings',
     icon: Settings,
   },
+  {
+    name: 'Online',
+    icon: Globe,
+  },
 ];
 
 const sidebarLinks = sidebarLabels.map(({ name, icon, badgeCount }) => {
   const nameLowerCase = name.toLocaleLowerCase();
-  const baseUrl = '/dashboard';
-  const path =
-    nameLowerCase === baseUrl.replace('/', '')
-      ? baseUrl
-      : `${baseUrl}/${nameLowerCase}`;
+  const baseUrl = 'dashboard';
   const Icon = icon;
+
+  let path = '';
+  if (nameLowerCase === 'online') {
+    path = '/';
+  } else if (nameLowerCase === baseUrl) {
+    path = `/${baseUrl}`;
+  } else {
+    path = `/${baseUrl}/${nameLowerCase}`;
+  }
+
   return {
-    name,
-    path,
+    name: name,
     icon: <Icon />,
-    badgeCount,
+    path: path,
+    badgeCount: badgeCount,
   };
 });
 

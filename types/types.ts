@@ -18,3 +18,18 @@ export type LoginInputProps = {
   email: string;
   password: string;
 };
+
+export type MainNavItem = {
+  title: string;
+  href: string;
+};
+
+export type SidebarNavItem = {
+  title: string;
+  items: {
+    title: string;
+    href: string;
+    items: [];
+    label?: string;
+  }[];
+};
