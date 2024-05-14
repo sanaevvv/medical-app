@@ -18,6 +18,7 @@ import {
 } from '@heroicons/react/20/solid';
 import Link from 'next/link';
 import Image from 'next/image';
+import ModeToggle from '../ModeToggle';
 
 
 function classNames(...classes: string[]) {
@@ -66,13 +67,14 @@ export default function Navbar() {
             Company
           </a>
         </Popover.Group>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden lg:flex lg:items-center lg:flex-1 lg:justify-end">
           <Link
             href="/login"
-            className="text-sm font-semibold leading-6 text-gray-50 bg-blue-700 px-6 py-3 rounded-md"
+            className="text-sm font-semibold leading-6 text-gray-50 bg-blue-700 px-6 py-3 mx-2 rounded-md"
           >
             Log in <span aria-hidden="true">&rarr;</span>
           </Link>
+          <ModeToggle />
         </div>
       </nav>
       <Dialog

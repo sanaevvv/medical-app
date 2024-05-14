@@ -6,19 +6,19 @@ import TabbedSection from '@/components/Frontend/TabbedSection';
 export default function Home() {
   return (
     <>
-      <section className="bg-blue-950">
+      <section className="bg-blue-950 dark:bg-slate-950">
         <Hero />
       </section>
-      <section>
+      <section className="py-10 lg:py-[90px] bg-slate-100 text-slate-800">
         <Brands />
       </section>
-      <section className="bg-slate-100">
+      <section className="pb-12 pt-20 dark:bg-slate-950 lg:py-[90px]">
         <TabbedSection />
       </section>
-      <section className="py-8 lg:py-24 bg-pink-100">
+      <section className="py-8 lg:py-24 bg-pink-100 dark:bg-teal-900">
         <DoctorsList />
       </section>
-      <section className="py-8 lg:py-24 bg-white">
+      <section className="py-8 lg:py-24 bg-blue-50 dark:bg-slate-900">
         <DoctorsList title="In-person doctor visit" isInPerson />
       </section>
     </>

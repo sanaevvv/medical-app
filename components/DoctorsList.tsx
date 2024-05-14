@@ -2,8 +2,9 @@ import { SectionHeading } from './SectionHeading';
 import { ToggleButton } from './ToggleButton';
 import Link from 'next/link';
 import { DoctorCard } from './DoctorCard';
-import { Map } from 'lucide-react';
+import { ArrowUpRight, Map } from 'lucide-react';
 import DoctorsListCarousel from './DoctorsListCarousel';
+import { Button } from './ui/button';
 
 export const DoctorsList = ({
   title = 'Telehealth visit',
@@ -41,9 +42,12 @@ export const DoctorsList = ({
         ) : (
           <ToggleButton />
         )}
-        <Link href="" className="py-3 px-6 border border-blue-600 bg-white">
-          See All
+        <Button asChild>
+        <Link href="" className="">
+            See All
+            <ArrowUpRight className="h-4 w-4 ms-2" />
         </Link>
+        </Button>
       </div>
       <div className="py-6">
         <DoctorsListCarousel doctors={doctors} isInPerson={isInPerson} />

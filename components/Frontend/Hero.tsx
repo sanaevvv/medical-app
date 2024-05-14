@@ -6,14 +6,14 @@ import { Pill } from 'lucide-react';
 const TEXTS = [
   'Acupuncture',
   'Massage',
-  'Chiropractor',
+  // 'Chiropractor',
   'Dental',
   'Cosmetic',
   'Dietitian',
-  'Speech Therapist',
-  'Occupational',
-  'Therapist',
-  'Acupuncturist',
+  // 'Speech Therapist',
+  // 'Occupational',
+  // 'Therapist',
+  // 'Acupuncturist',
 ];
 
 const Hero = () => {

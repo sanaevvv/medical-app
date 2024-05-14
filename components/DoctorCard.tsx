@@ -43,7 +43,7 @@ export const DoctorCard = ({
   isInPerson?: boolean;
 }) => {
   return (
-    <div className="border border-gray-200 bg-white w-[340px] py-6 px-4 rounded-md hover:border-gray-400 duration-300 transition-all hover:bg-gray-50">
+    <div className="border border-gray-200 dark:border-gray-600 bg-white dark:bg-slate-800 w-[340px] py-8 px-6 rounded-md hover:border-gray-400 duration-300 transition-all inline-flex flex-col">
       <Link href={`/doctors/slug`}>
         <h2 className="uppercase font-bold text-2xl tracking-widest">
           Vijal Patel PA-C
@@ -69,12 +69,12 @@ export const DoctorCard = ({
               <Stethoscope className="w-4 h-4 mr-2 flex-shrink-0" />
               <span>Family Medicine</span>
             </p>
-            <p className="bg-green-200 py-3 px-6 uppercase">Available today</p>
+            <p className="bg-green-200 dark:text-slate-900 py-3 px-6 uppercase">Available today</p>
           </div>
         </div>
-        <hr className="pt-6 border-gray-200" />
+        <hr className="pt-6 border-gray-200 dark:border-gray-600" />
         <h3 className="flex gap-4 justify-between items-center">
-          <span className="text-gray-600">Fri, May 3</span>
+          <span className="text-gray-600 dark:text-gray-400">Fri, May 3</span>
           <span className="font-bold">$137</span>
         </h3>
       </Link>

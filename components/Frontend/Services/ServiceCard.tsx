@@ -5,7 +5,7 @@ export const ServiceCard = ({ title, image, slug }: ServiceType) => {
   return (
     <Link
       href={`/services/${slug}`}
-      className="rounded-md bg-white hover:bg-slate-100 duration-300 flex gap-4 overflow-hidden"
+      className="rounded-md bg-white hover:bg-slate-100 dark:bg-slate-800 duration-300 flex gap-4 overflow-hidden"
     >
       <Image
         src={image}
